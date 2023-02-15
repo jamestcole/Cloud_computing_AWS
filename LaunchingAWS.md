@@ -48,3 +48,32 @@ use this line in the GitBash terminal next
 
 $ `ssh -i "devops-tech201.pem" ubuntu@ec2-3-252-250-105.eu-west-1.compute.amazonaws.com`
 
+## Update and Install nginx
+
+`sudo apt-get update -y` 
+
+`sudo apt-get install nginx -y`
+
+## Migrating files to AWS
+
+We can use the SCP command 
+
+`scp -i devops-tech201.pem -r C:\Users\James_Cole\.vscode\tech201_virtualisation\tech201_virtualisation\app ubuntu@ec2-34-248-205-55.eu-west-1.compute.amazonaws.com:/home/ubuntu`
+
+This line has to be written in the .ssh folder on your pc to connect to the remote host.
+
+after this we must connect to our AWS and navigate to the app file such as `ubuntu@ip-172-31-21-5:~/app$`.
+
+Then run the following:
+
+`sudo apt install npm`
+
+`node app.js`
+
+
+## Troubleshooting
+
+### Ip address change
+
+This could result in a timeout from an ssh request
+
