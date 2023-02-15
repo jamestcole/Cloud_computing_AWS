@@ -128,9 +128,23 @@ sudo systemctl restart nginx
 node seeds/seed.js
 ```
 
+It will likely now be necessary to kill the port connection at 3000 and reset:
+
+`sudo lsof -i :3000`
+
+will list the processes active at port 3000
+
+`kill -9 number`
+
+Insert the number where number is written for the port (PID).
+
+
+
 ## Troubleshooting
 
 ### Ip address change
 
 This could result in a timeout from an ssh request
+
+![Alt text](EditInboundRules.PNG "a title")
 
