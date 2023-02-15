@@ -84,6 +84,10 @@ Then run the following:
 
 `node app.js`
 
+If everything has been set up correctly this should be sufficient to reach your homepage, example :
+
+![Alt text](AWS9.PNG "a title")
+
 ## Running the app and setting up the reverse proxy
 
 Navigate to your IP address in EC2 Instance connect from the AWS website. by going to the :3000 port your app should now be working however, It will not work by reverse proxy unless it has been configured this way.
@@ -152,6 +156,9 @@ will list the processes active at port 3000
 
 Insert the number where number is written for the port (PID).
 
+Finally we should be able to see our app homepage work by reverse proxy:
+
+![Alt text](AWS10.PNG "a title")
 
 
 ## Troubleshooting
