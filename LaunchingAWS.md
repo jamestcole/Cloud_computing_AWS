@@ -18,9 +18,12 @@ Select the key pair for this instance, or create a new key pair. The key should 
 
 ![Alt text](AWS3.png "a title")
 
-Change Network Settings
+Change Network Settings by adding up to 3 security rules this should specify My IP for the first rule, HTTP Anywhere for the second and Custom TCP Anywhere 3000 for the Node App
+
 
 ![Alt text](AWS4.png "a title")
+
+
 
 When ready launch the instance.
 
@@ -42,7 +45,7 @@ $ `chmod 400 devops-tech201.pem`
 
 Now we have to get a line from our AWS console to complete the next step. by clicking on our instance in the list of instances and then connect, this line should be generated for us.
 
-![Alt text](AWS7.png "a title")
+![Alt text](AWS7.PNG "a title")
 
 use this line in the GitBash terminal next
 
@@ -60,9 +63,14 @@ We can use the SCP command
 
 `scp -i devops-tech201.pem -r C:\Users\James_Cole\.vscode\tech201_virtualisation\tech201_virtualisation\app ubuntu@ec2-34-248-205-55.eu-west-1.compute.amazonaws.com:/home/ubuntu`
 
-This line has to be written in the .ssh folder on your pc to connect to the remote host.
+This line has to be written in the .ssh folder on your pc to connect to the remote host. In case the process stops abruptly it may be necessary to copy individual files or folders into the correct directory, this error has occured in mine. Consult with the scp documentation to find the correct commands to get your files in the correct directories or use these guides to help.
 
-after this we must connect to our AWS and navigate to the app file such as `ubuntu@ip-172-31-21-5:~/app$`.
+https://linuxize.com/post/how-to-move-files-in-linux-with-mv-command/
+
+https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/
+
+
+After this we must connect to our AWS and navigate to the app file such as `ubuntu@ip-172-31-21-5:~/app$`.
 
 Then run the following:
 
