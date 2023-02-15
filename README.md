@@ -22,4 +22,50 @@ more recently the most populare cloud services such as aws in 2002 and azure in 
 
 ## What are the benefits of cloud computing
 
-There are many benefits to cloud computing including Business continuaty, Scalabiliy , Cost, Easier Collabertion, Faster Backups and Prevention of Data loss
+There are many benefits to cloud computing including Business continuaty, Scalabiliy , Cost, Easier Collabertion, Faster Backups and Prevention of Data loss.
+
+![Alt text](cloud-computing-benefit.png "a title")
+
+## What are the benefits of cloud computing for business
+
+
+
+## what is AWS
+
+
+
+## History of AWS
+
+
+
+## Who are some of the other leaders in Cloud technology
+
+
+
+## What are the different types of cloud (public,private,hybrid)
+
+
+
+## What types of industry use each type of cloud and Why?
+
+
+
+## What are the different types of Cloud service (IaaS, Paas, Saas)
+
+
+
+## Differeces between different types of Cloud service
+
+
+
+## Operating expenditure vs Capital expenditure (OpEx vs CapEx)
+
+
+
+## Examples of companies that use the cloud - and what for
+
+
+
+## Summary
+
+
