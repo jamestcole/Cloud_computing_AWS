@@ -2,7 +2,9 @@
 
 ## Opening AWS
 
-make sure region is ireland or whichever is necassry for this instance as it is regionally specific.
+make sure region is ireland or whichever is necessary for this instance as it is regionally specific.
+
+![Alt text](AWS0.PNG "a title")
 
 ## Starting AWS instance
 
@@ -47,7 +49,7 @@ Now we have to get a line from our AWS console to complete the next step. by cli
 
 ![Alt text](AWS7.PNG "a title")
 
-use this line in the GitBash terminal next
+Use this line in the GitBash terminal next which specifies the key file and instance address.
 
 $ `ssh -i "devops-tech201.pem" ubuntu@ec2-3-252-250-105.eu-west-1.compute.amazonaws.com`
 
