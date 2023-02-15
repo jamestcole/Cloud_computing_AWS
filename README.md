@@ -1,6 +1,8 @@
 # Cloud_computing_AWS
 Cloud_computing_AWS
 
+
+
 ## What is cloud computing
 
 fundamentally cloud computing is the on demand availability of computing resources without the maintainance of necessary hardware for the end user. In particular, data storage  where the proportion stored on he cloud has grown to 60% of corporate data by 2022 and is still rapidly increasing.
@@ -17,3 +19,7 @@ more recently the most populare cloud services such as aws in 2002 and azure in 
 
 
 ![Alt text](History-of-Cloud-Computing.png "a title")
+
+## What are the benefits of cloud computing
+
+There are many benefits to cloud computing including Business continuaty, Scalabiliy , Cost, Easier Collabertion, Faster Backups and Prevention of Data loss
