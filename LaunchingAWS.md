@@ -25,6 +25,10 @@ Change Network Settings by adding up to 3 security rules this should specify My 
 
 ![Alt text](AWS4.png "a title")
 
+Once we are done we can have a look at the security groups on the EC2 dashboard. They should confirm our settings:
+
+
+![Alt text](AWS8.PNG "a title")
 
 
 When ready launch the instance.
