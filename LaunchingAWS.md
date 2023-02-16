@@ -78,16 +78,22 @@ We can use the SCP command
 
 `scp -i devops-tech201.pem -r C:\Users\James_Cole\.vscode\tech201_virtualisation\tech201_virtualisation\app ubuntu@ec2-34-248-205-55.eu-west-1.compute.amazonaws.com:/home/ubuntu`
 
-This line has to be written in the .ssh folder on your pc to connect to the remote host. In case the process stops abruptly it may be necessary to copy individual files or folders into the correct directory, this error has occured in mine. Consult with the scp documentation to find the correct commands to get your files in the correct directories or use these guides to help.
+This line has to be written in the .ssh folder on your pc to connect to the remote host. In case the process stops abruptly it may be necessary to copy individual files or folders into the correct directory, this error has occured in mine. Consult with the scp documentation to find the correct commands to get your files in the correct directories or use these guides to help. In the case of individual files, the `-r` can be removed which stands for write recursively and is only applicable to directories.
 
 https://linuxize.com/post/how-to-move-files-in-linux-with-mv-command/
 
 https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/
 
 
-After this we must connect to our AWS and navigate to the app file such as `ubuntu@ip-172-31-21-5:~/app$`.
+After this we must connect to our AWS using the ssh -i command from earlier with the relevent addreesses and navigate to the app file such as `ubuntu@ip-172-31-21-5:~/app$`.
 
-Then run the following:
+`cd app`
+
+You can check that the relevent files are located here by using the following.
+
+`ls`
+
+Then run the These commands to install and run the app from the cloud.
 
 `sudo apt install npm`
 
