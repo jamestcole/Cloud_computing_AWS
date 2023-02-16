@@ -68,13 +68,15 @@ $ `ssh -i "devops-tech201.pem" ubuntu@ec2-3-252-250-105.eu-west-1.compute.amazon
 
 ## Update and Install nginx
 
+Using these commands, Nginx can be updated and installed on the AWS server.
+
 `sudo apt-get update -y` 
 
 `sudo apt-get install nginx -y`
 
 ## Migrating files to AWS
 
-We can use the SCP command 
+We can use the SCP command to migrate our files, hre the `-i` is for prompting for confirmation of files to be replaced , the first address is for the pem file to use as the key. The `-r` will direct the second address to be copied to the third.
 
 `scp -i devops-tech201.pem -r C:\Users\James_Cole\.vscode\tech201_virtualisation\tech201_virtualisation\app ubuntu@ec2-34-248-205-55.eu-west-1.compute.amazonaws.com:/home/ubuntu`
 
