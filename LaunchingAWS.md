@@ -186,7 +186,7 @@ Finally we should be able to see our app homepage work by reverse proxy:
 
 ### Ip address change
 
-This could result in a timeout from an ssh request
+This could result in a timeout from an ssh request, the solution is to naviage to the Inbound rules in the EC2 console and reselect your IP where the old IP still is.
 
 ![Alt text](EditInboundRules.PNG "a title")
 
