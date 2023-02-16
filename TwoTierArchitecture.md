@@ -27,3 +27,14 @@ Devops is about improving our software in parallel , by having seperate componen
 ## How does this fit into agile/ SCRUM?
 
 Having more than one tier allows improvemnts in smaller increments which is more in keeping with the scrum principles than monolithic which may have single larger releases.
+
+## Security Rules
+
+## Requirements for Two Tier architecture
+
+- app tier deployed and available on port 3000
+- create second tier dependancies using ubuntu 18.04LT Mongodb
+- Installed and Config changed for mongod.conf 0.0.0.0
+-Security group for the database allows 27017 from anywhere 
+- Create an env var in app instance with database endpoint
+- Relaunch the app
