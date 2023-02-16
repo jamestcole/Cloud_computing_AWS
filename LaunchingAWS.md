@@ -1,5 +1,14 @@
 # Setting up AWS
 
+## Using AWS with Vagrant and Nginx
+
+The purpose of this repository is to demonstrate the seting up of AWS , migrating the app files to it and setting up the app to be accessed from the cloud. Here is a quick outline of what will have to be managed to accomplish this by using the files initially set up on vagrant to be migrated to an amazon EC2 (Elastic Compute Cloud) with NGINX enabled to ensure the use of a reverse proxy.
+
+
+
+![Alt text](plan.jpg "a title")
+
+
 ## Opening AWS
 
 make sure region is ireland or whichever is necessary for this instance as it is regionally specific.
