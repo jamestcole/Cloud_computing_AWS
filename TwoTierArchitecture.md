@@ -37,4 +37,37 @@ Having more than one tier allows improvemnts in smaller increments which is more
 - Installed and Config changed for mongod.conf 0.0.0.0
 -Security group for the database allows 27017 from anywhere 
 - Create an env var in app instance with database endpoint
+- Database is exposed only to the app
 - Relaunch the app
+
+## Starting Mongodb
+
+Navigate to the `.ssh` directory in your pc.
+
+change directory to enter your database vm, you should be able to find the example command after connecting your database virtual machine on the EC2 Console, the code here should be changed to have the correct address. 
+
+`ssh -i "devops-tech201.pem" ubuntu@ec2-34-248-23-204.eu-west-1.compute.amazonaws.com`
+
+Run the following code to ensure access to the internet.
+
+`sudo apt-get update -y`
+
+Now we have to do the data migration, the easiest way to do this is to get our repository URL and use the clone command
+
+`git clone URL`
+
+Now we will have to navigate to the correct forlder with the provision file with the script ls, cd
+
+use the following commands to reach the correct provision.sh file.
+
+`cd`
+`ls`
+
+To avoid automatic configuration, use `#` to disable the mongod config lines in `provison.sh`
+
+`sudo nano provision.sh`
+
+change the permissions with the following command to ensure that the provision file is read only
+
+`chmod 700 provision.sh`
+
