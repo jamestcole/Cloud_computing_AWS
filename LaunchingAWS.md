@@ -70,9 +70,13 @@ $ `ssh -i "devops-tech201.pem" ubuntu@ec2-3-252-250-105.eu-west-1.compute.amazon
 
 Using these commands, Nginx can be updated and installed on the AWS server.
 
-`sudo apt-get update -y` 
+`sudo apt-get update -y`
+
+`sudo apt-get upgrade -y`
 
 `sudo apt-get install nginx -y`
+
+If the IP address from the EC2 Instance Connect tab is checked, the Nginx homepage should now be visable.
 
 ## Migrating files to AWS
 
