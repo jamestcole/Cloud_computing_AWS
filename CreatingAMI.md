@@ -14,6 +14,6 @@ This should be named with proper naming conventions , that it is an AMI and with
 
 To find the AMI later by navigating to the AMI images on the left in the AWS website. Then type in your instance name and slect launch instance from AMI.
 
-Name the instance with the same naming convention as he others
+Name the instance with the same naming convention as he others.
 
-to relaunch, remember that the IP addresses change and must be configured.
+to relaunch, remember that the IP addresses changed and must be configured.
