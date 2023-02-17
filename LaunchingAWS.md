@@ -6,38 +6,39 @@ The purpose of this repository is to demonstrate the seting up of AWS , migratin
 
 
 
-![Alt text](plan.jpg "a title")
+
+![Alt text](pics/plan.jpg "a title")
 
 
 ## Opening AWS
 
 make sure region is ireland or whichever is necessary for this instance as it is regionally specific.
 
-![Alt text](AWS0.PNG "a title")
+![Alt text](pics/AWS0.PNG "a title")
 
 ## Starting AWS instance
 
 Navigate to EC2 from ireland then launch a new instance.
 
-![Alt text](AWS2.png "a title")
+![Alt text](pics/AWS2.png "a title")
 
 scroll down to Application and OS image. change this to ubuntu 18.04, leave options on default
 
-![Alt text](AWS1.png "a title")
+![Alt text](pics/AWS1.png "a title")
 
 Select the key pair for this instance, or create a new key pair. The key should be in the .ssh folder.
 
-![Alt text](AWS3.png "a title")
+![Alt text](pics/AWS3.png "a title")
 
 Change Network Settings by adding up to 3 security rules this should specify My IP for the first rule, HTTP Anywhere for the second and Custom TCP Anywhere 3000 for the Node App
 
 
-![Alt text](AWS4.png "a title")
+![Alt text](pics/AWS4.png "a title")
 
 Once we are done we can have a look at the security groups on the EC2 dashboard. They should confirm our settings:
 
 
-![Alt text](AWS8.PNG "a title")
+![Alt text](pics/AWS8.PNG "a title")
 
 
 When ready launch the instance.
@@ -48,7 +49,7 @@ If, for some reason the .pem key pair cannot be copied into the ssh folder, anot
 
 $ `nano devops-tech201.pem`
 
-![Alt text](AWS6.png "a title")
+![Alt text](pics/AWS6.png "a title")
 
 ## Setup on Gitbash
 
@@ -56,11 +57,11 @@ Then do this, where chmod means to change the permissions , 400 means read only 
 
 $ `chmod 400 devops-tech201.pem`
 
-![Alt text](AWS5.png "a title")
+![Alt text](pics/AWS5.png "a title")
 
 Now we have to get a line from our AWS console to complete the next step. by clicking on our instance in the list of instances and then connect, this line should be generated for us.
 
-![Alt text](AWS7.PNG "a title")
+![Alt text](pics/AWS7.PNG "a title")
 
 Use this line in the GitBash terminal next which specifies the key file and instance address.
 
@@ -107,7 +108,7 @@ Then run the These commands to install and run the app from the cloud.
 
 If everything has been set up correctly this should be sufficient to reach your homepage, example :
 
-![Alt text](AWS9.PNG "a title")
+![Alt text](pics/AWS9.PNG "a title")
 
 ## Running the app and setting up the reverse proxy
 
@@ -179,7 +180,7 @@ Insert the number where number is written for the port (PID).
 
 Finally we should be able to see our app homepage work by reverse proxy:
 
-![Alt text](AWS10.PNG "a title")
+![Alt text](pics/AWS10.PNG "a title")
 
 
 ## Troubleshooting
@@ -188,5 +189,6 @@ Finally we should be able to see our app homepage work by reverse proxy:
 
 This could result in a timeout from an ssh request, the solution is to naviage to the Inbound rules in the EC2 console and reselect your IP where the old IP still is.
 
-![Alt text](EditInboundRules.PNG "a title")
+
+![Alt text](pics/EditInboundRules.PNG "a title")
 

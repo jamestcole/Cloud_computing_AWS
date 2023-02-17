@@ -2,13 +2,13 @@
 
 Two tier architecture should be created on the AWS cloud with two servers deployed on Elastic Compute Cloud (EC2) Instances.
 
-![Alt text](VPC-Architecture-1.jpg "a title")
+![Alt text](pics/VPC-Architecture-1.jpg "a title")
 
 
 
 ## Why do we need to make a 2-tier architecture ?
 
-![Alt text](AWS11.PNG "a title")
+![Alt text](pics/AWS11.PNG "a title")
 
 We need to make 2-tier architecture due to the risk of the monolith architecture failing and being completely unaccessable, users should still be able to access the app and be redirected to another page in the case of database failure. It also provieds security by keeping the data seperate from the app greater performance reliability and cost reduction.
 
