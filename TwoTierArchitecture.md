@@ -69,5 +69,19 @@ To avoid automatic configuration, use `#` to disable the mongod config lines in 
 
 change the permissions with the following command to ensure that the provision file is read only
 
-`chmod 700 provision.sh`
+`chmod 400 provision.sh`
+
+Then we have to .ssh in to our instance
+
+`ssh -i "devops-tech201.pem" ubuntu@ec2-34-248-23-204.eu-west-1.compute.amazonaws.com`
+
+`sudo apt-get update-y`
+
+`sudo apt-get upgrade -y`
+
+`sudo agt-get install nginx -y`
+
+The I.P address should now show the nginx homepage.
+
+## Migration and running the app
 
