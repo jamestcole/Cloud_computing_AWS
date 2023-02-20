@@ -68,7 +68,7 @@ and edit it with
 
 `sudo nano text.txt`
 
-By navigating to s3 and finding your bucket, you will also be able to find this file.
+By navigating to s3 and finding your bucket, you will also be able to find this file in your bucket instantce.
 
 
 
