@@ -10,7 +10,7 @@ CRUD
 - upload
 - download
 
-![Alt text](pics/buckets.PNG "a title")
+![Alt text](pics/buckets.png "a title")
 
 ## S3 Buckets
 
