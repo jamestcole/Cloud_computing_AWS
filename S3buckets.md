@@ -10,6 +10,8 @@ CRUD
 - upload
 - download
 
+![Alt text](pics/buckets.PNG "a title")
+
 ## S3 Buckets
 
 A bucket is a container of objects stored in S3. Every object is contained in a bucket, these need a region and URL. You can use Amazon S3 API's to manage buckets.
