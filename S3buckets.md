@@ -72,6 +72,55 @@ and edit it with
 
 By navigating to s3 and finding your bucket, you will also be able to find this file in your bucket instantce.
 
+we can use the following command to sync our bucket with the one on AWs console, if we don't have files on our local system
+
+`aws s3 sync s3://james-tech201 .`
+
+The point at the end can be changed for the specific file. The cp copy command can be used for the same purpose.
+
+`aws s3 cp s3://mybucket/test.txt new_file_name.txt`
+
+To remove the data from the bucket.
+
+`aws s3 rm s3://james-tech201/test.txt`
+
+To remove the bucket the following command line can be used
+
+`aws s3 rb s3://james-tech201`
+
+## Python Scripts
+
+Use the following to install boto3
+
+`pip3 install boto3`
+
+This should confirm that boto3 is downloaded
+
+`pip3 show boto3`
+
+Now We can write a python file for the config and run it.
+
+`sudo touch file.py`
+
+Once we have created the file, it can now be filled with the relevant code to start our bucket.
+
+`sudo nano file.py`
+
+```
+import boto3 
+s3 = boto3.resource('s3')
+s3.create_bucket(Bucket='james-tech201-python', CreateBucketConfiguration={'LocationConstraint': 'eu-west-1'}) 
+bucket = s3.Bucket('james-tech201-python')
+bucket.upload_file('C:/Users/james-tech201/.ssh/test1.txt', 'test1.txt') 
+bucket.download_file('test1.txt', 'C:/Users/james-tech201/.ssh/test1.txt') 
+bucket.Object('test1.txt').delete() 
+s3.Bucket('james-tech201-python').delete()
+```
+
+To run the python file use this line. This should automatically create our bucket, transfer a file and then delete it.
+
+`python3 file.py`
+
 
 
 
