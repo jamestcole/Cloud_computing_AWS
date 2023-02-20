@@ -24,6 +24,8 @@ Firstly you need a pair of keys, the Access key ID and the Secret Access keys. A
 
 Once this is completed you can simply enter your instance in GitBash using the line from the connect tab on your running instance.
 
+![Alt text](pics/bucketplan.png "a title")
+
 Now the following commands can be entered.
 
 `sudo apt-get update -y`
