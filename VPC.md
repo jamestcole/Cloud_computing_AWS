@@ -1,5 +1,7 @@
 # Virtual Private Cloud
 
+![Alt text](pics/vpc.jpg "a title")
+
 ## Virtual private cloud
 virtual private clouds are a pool of shared rescources allocated within a public cloud environment. You can add subnets to this virtual private cloud which is a range of IP addresses in your VPC.
 
