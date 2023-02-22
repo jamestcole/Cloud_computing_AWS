@@ -20,3 +20,13 @@ virtual private clouds are a pool of shared rescources allocated within a public
 - A flow log captures information about the IP traffic going to and from network interfaces in your VPC.
 
 - Connect your VPCs to your on-premises networks using AWS Virtual Private Network (AWS VPN).
+
+## CIDR
+- Classless inter-domain routing (CIDR) is a method for allocating IP addresses and IP routing. 
+- A collection of Internet Protocol (IP) standards is used to create unique identifiers for networks and individual devices. 
+- The IP addresses allow the transmission of unique packets of information to specific computers.
+
+- CIDR is mainly used to use IP addresses and solve the routing table explosion efficiently. 
+- It is defined in RFC (Request for comments) 1518 and RFC 4632. It is an address block allocation. 
+- There are five different classes in the IPV4 addressing system. The IP address classes are used for Internet IP addresses assignment.
+
