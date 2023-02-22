@@ -2,8 +2,14 @@
 
 ![Alt text](pics/vpc.jpg "a title")
 
+## How does the VPC help Devops
+
+- keeps instances private, good for instances that should not be connected to the internet.
+
 ## Virtual private cloud
 virtual private clouds are a pool of shared rescources allocated within a public cloud environment. You can add subnets to this virtual private cloud which is a range of IP addresses in your VPC.
+
+- You can create any number of subnets, though you cannot overlap them within the same VPC
 
 - You can assign IPv4 addresses and IPv6 addresses to your VPCs and subnets. 
 
@@ -32,3 +38,8 @@ virtual private clouds are a pool of shared rescources allocated within a public
 - It is defined in RFC (Request for comments) 1518 and RFC 4632. It is an address block allocation. 
 - There are five different classes in the IPV4 addressing system. The IP address classes are used for Internet IP addresses assignment.
 
+## What is an Internet gateway
+
+- A gateway connects networks, while a router typically delivers data within a network. 
+- Historically, gateways and routers have been separate devices. However, it's becoming more common for their functions to be combined and simply called a router. 
+- For example, the Wi-Fi routers commonly provided for home and small business internet service are both a router (delivering data) and a gateway (translating it so destination devices can use it).
