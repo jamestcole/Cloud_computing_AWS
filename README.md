@@ -9,7 +9,7 @@ fundamentally cloud computing is the on demand availability of computing resourc
 A cloud functions by keeping its data in large centralised datacenters and connecting with end users to provide this data on demand in  a secure manner. Organizations of every type, size, and industry are using the cloud for a wide variety of use cases, such as data backup, disaster recovery, email, virtual desktops, software development and testing, big data analytics, and customer-facing web applications.
 
 
-![Alt text](Cloud-Computing.jpg.webp "a title")
+![Alt text](pics/Cloud-Computing.jpg.webp "a title")
 
 ## History of cloud computing
 
@@ -18,13 +18,13 @@ in the `1990s virtual private networks were developed by telecoms companies to u
 more recently the most populare cloud services such as aws in 2002 and azure in 2010 have seen cloud computing sckyrocket in use with most corporate data being on the cloud since 2020 and the proportion continuing to increase rapidly.
 
 
-![Alt text](History-of-Cloud-Computing.png "a title")
+![Alt text](pics/History-of-Cloud-Computing.png "a title")
 
 ## What are the benefits of cloud computing
 
 There are many benefits to cloud computing including Business continuaty, Scalabiliy , Cost, Easier Collabertion, Faster Backups and Prevention of Data loss.
 
-![Alt text](cloud-computing-benefit.png "a title")
+![Alt text](pics/cloud-computing-benefit.png "a title")
 
 ## What are the benefits of cloud computing for business
 

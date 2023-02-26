@@ -49,4 +49,11 @@ sudo systemctl enable nginx
 10. add tag of names and value in naming scheme with -SC on the end just for easy recognition
 11. finally click next and then create auto scaling group
 
+This should now automatically start two instances with the following when you connect to the public ip
 
+![Alt text](pics/AWS18.PNG "a title")
+
+
+## Setting up our App
+
+![Alt text](pics/AWS19.PNG "a title")

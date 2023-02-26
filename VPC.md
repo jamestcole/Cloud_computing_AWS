@@ -187,7 +187,7 @@ then use the command in the connect section of your app instance , make sure it 
 
 `ssh -i "devops-tech201.pem" ubuntu@54.229.243.47`
 
-Once inside, use the following commands
+Once inside, use the following commands, note the IP of he DB_HOST is the IP of your private network that is on the same VPC.
 
 ```
 export DB_HOST=mongodb://10.0.8.93:27017/posts
@@ -196,6 +196,14 @@ npm start
 node seeds/seed.js
 node app.js
 ```
+
+Once seeds/seed.js gives the database cleared and seeded result, this should be connected and you will be able to see your DB working through your app via a private network (there will be no public available IP displayed). terminating your DB instance will cause this to fail demonstrating this success.
+
+![Alt text](pics/vpcsuccessinstance.PNG "a title")
+
+![Alt text](pics/vpcsuccessposts.PNG "a title")
+
+
 
 To check that your app is working:
 
@@ -209,6 +217,7 @@ node app.js
 ```
 
 ![Alt text](pics/appactive22.PNG "a title")
+
 
 
 
