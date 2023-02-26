@@ -43,7 +43,7 @@ sudo systemctl enable nginx
 4. Select DevOpsStudent default 1a , 1b and 1c as the three available zones and subnets
 5. configure advanced options, attach to a new load balancer
 6. select internet-facing load balancer scheme
-7. for default routing select your target group or create if not.
+7. for default routing select your target group or create if not, should be allow port 80.
 8. For health checks tick ELB and response time of 300
 9. now configure group size and scaling policies group size should be 2,2,3 for desired, minimum and maximum
 10. add tag of names and value in naming scheme with -SC on the end just for easy recognition
